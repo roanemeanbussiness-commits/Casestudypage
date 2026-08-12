@@ -88,7 +88,7 @@ html,body{width:1584px;height:396px;overflow:hidden;background:%(page)s}
   transform:translateY(-50%%);opacity:.34}
 
 /* soft scrim so the ray field does not ghost through the wordmark */
-.scrim{position:absolute;left:520px;top:50%%;width:560px;height:300px;
+.scrim{position:absolute;left:520px;top:50%%;width:600px;height:320px;
   transform:translateY(-50%%);
   background:radial-gradient(ellipse at center,%(scrimA)s 0%%,
     %(scrimB)s 45%%,%(scrim0)s 74%%)}
@@ -97,24 +97,24 @@ html,body{width:1584px;height:396px;overflow:hidden;background:%(page)s}
 .safe{width:392px;flex:none}
 
 .lockup{position:relative;display:flex;align-items:center;gap:36px}
-.mark{width:156px;height:156px;flex:none;object-fit:contain;
+.mark{width:172px;height:172px;flex:none;object-fit:contain;
   filter:drop-shadow(0 5px 20px rgba(214,140,26,.30))}
 .word{display:flex;flex-direction:column;gap:13px}
-.word b{font-family:"Fraunces",Georgia,serif;font-weight:400;font-size:78px;
+.word b{font-family:"Fraunces",Georgia,serif;font-weight:400;font-size:86px;
   font-variation-settings:"opsz" 144;
   line-height:.9;letter-spacing:-.021em;color:%(ink)s}
-.word i{font-style:normal;font-size:14.5px;font-weight:600;letter-spacing:.44em;
+.word i{font-style:normal;font-size:17px;font-weight:600;letter-spacing:.42em;
   text-transform:uppercase;color:%(muted)s;padding-left:4px}
 
-.rule{position:relative;width:1px;height:140px;margin:0 54px;
+.rule{position:relative;width:1px;height:160px;margin:0 50px;
   background:linear-gradient(180deg,%(rule0)s,%(rule)s 20%%,%(rule)s 80%%,%(rule0)s)}
 
-.say{position:relative;max-width:440px;display:flex;flex-direction:column;gap:16px}
-.say strong{font-family:"Fraunces",Georgia,serif;font-weight:300;font-size:30px;
-  font-variation-settings:"opsz" 96;
-  line-height:1.24;letter-spacing:-.012em;color:%(ink2)s}
+.say{position:relative;max-width:600px;display:flex;flex-direction:column;gap:18px}
+.say strong{font-family:"Fraunces",Georgia,serif;font-weight:400;font-size:44px;
+  font-variation-settings:"opsz" 120;
+  line-height:1.16;letter-spacing:-.015em;color:%(ink2)s}
 .say strong em{font-style:normal;color:%(accent)s}
-.say span{font-size:14.5px;font-weight:450;line-height:1.62;color:%(muted2)s}
+.say span{font-size:21px;font-weight:500;letter-spacing:.005em;line-height:1.5;color:%(muted2)s}
 
 .edge{position:absolute;left:0;right:0;bottom:0;height:4px;
   background:linear-gradient(90deg,#f39c14,#ffc257 44%%,#f39c14)}
@@ -130,8 +130,8 @@ html,body{width:1584px;height:396px;overflow:hidden;background:%(page)s}
   </div>
   <div class="rule"></div>
   <div class="say">
-    <strong>AI systems your business <em>actually owns</em>.</strong>
-    <span>We audit how you run it, build the system around it, and hand you the keys.</span>
+    <strong>AI systems your business<br /><em>actually owns</em>.</strong>
+    <span>Audited. Built. Owned by you.</span>
   </div>
   <div class="edge"></div>
 </div>"""
@@ -140,13 +140,13 @@ THEMES = {
   "light": dict(
     page="#fff", ray="#d08f22", accent="#e8930f",
     bg="linear-gradient(100deg,#ffffff 0%,#fffdf8 46%,#fff4e2 100%)",
-    lift="#fffdf9", ink="#100e0b", ink2="#181510", muted="#8a8172", muted2="#7b7365",
+    lift="#fffdf9", ink="#100e0b", ink2="#181510", muted="#8a8172", muted2="#6a6255",
     rule="rgba(20,18,14,.22)", rule0="rgba(20,18,14,0)",
     scrimA="rgba(255,253,249,.95)", scrimB="rgba(255,253,249,.72)", scrim0="rgba(255,253,249,0)"),
   "dark": dict(
     page="#0c0b09", ray="#e8a83e", accent="#ffb43c",
     bg="linear-gradient(100deg,#0c0b09 0%,#131108 52%,#1c1608 100%)",
-    lift="rgba(46,34,10,.55)", ink="#f6f0e5", ink2="#efe8db", muted="#9c9384", muted2="#968d7e",
+    lift="rgba(46,34,10,.55)", ink="#f6f0e5", ink2="#efe8db", muted="#9c9384", muted2="#b0a795",
     rule="rgba(246,240,229,.24)", rule0="rgba(246,240,229,0)",
     scrimA="rgba(14,12,9,.88)", scrimB="rgba(14,12,9,.62)", scrim0="rgba(14,12,9,0)"),
 }

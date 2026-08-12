@@ -21,3 +21,11 @@ python3 assets/brand/banner.py     # writes banner-light.html / banner-dark.html
 Then screenshot each at 1584x396 with a deviceScaleFactor of 3 and downsample;
 that is where the crispness comes from. Editing the tagline, colours, or spacing
 means editing the template in that script, not the PNGs.
+
+### Sizing the copy
+
+LinkedIn renders the banner at roughly half its actual width, and crops a
+little off the top and bottom. Type has to be sized for that, not for
+1584x396: anything under about 20px in the file is unreadable on a real
+profile. Check any change by scaling the export to 860px wide and reading
+it at that size before uploading.
