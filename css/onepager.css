@@ -98,6 +98,30 @@ em{font-style:normal;color:var(--saffron)}
   border-bottom:2px solid var(--saffron);display:inline-block}
 .block p{margin-top:16px;font-size:15px;color:var(--ink-2);line-height:1.7}
 
+/* scale strip — the raw size of the operation, before any claims */
+.scale-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2.5vw,30px);
+  margin:-14px 0 40px;padding-bottom:32px;border-bottom:1px solid var(--line-soft)}
+.scale-strip b{display:block;font-family:var(--serif);font-weight:400;
+  font-size:clamp(22px,2.8vw,28px);line-height:1}
+.scale-strip span{display:block;margin-top:7px;font-size:12.5px;color:var(--muted)}
+
+/* the systems we shipped, listed plainly */
+.sys-title{font-family:var(--sans);font-weight:600;font-size:11px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--muted);margin-top:44px}
+.systems{list-style:none;counter-reset:sys;margin-top:20px;
+  border-top:1px solid var(--line-soft)}
+.systems li{counter-increment:sys;display:grid;grid-template-columns:190px 1fr;
+  gap:clamp(16px,3vw,34px);padding:18px 0;border-bottom:1px solid var(--line-soft)}
+.systems b{font-family:var(--serif);font-weight:400;font-size:18.5px;line-height:1.3}
+.systems b::before{content:"0" counter(sys);display:block;font-family:var(--sans);
+  font-size:10.5px;font-weight:600;letter-spacing:.2em;color:var(--saffron);margin-bottom:7px}
+.systems span{font-size:14.5px;color:var(--ink-2);line-height:1.7}
+
+/* estimate marker — anything not pulled straight from production */
+.est{border-bottom:1px dashed var(--saffron);padding-bottom:1px}
+.case-note{margin-top:22px;font-size:14px;color:var(--muted);line-height:1.7;max-width:76ch}
+.case-note b{color:var(--ink);font-weight:600}
+
 .metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;margin-top:40px;
   background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
 .metric{background:#fff;padding:22px 20px;text-align:left}
@@ -136,8 +160,10 @@ em{font-style:normal;color:var(--saffron)}
 /* ===== mobile ===== */
 @media (max-width:860px){
   .case-grid,.steps{grid-template-columns:1fr}
-  .metrics{grid-template-columns:repeat(2,1fr)}
+  .metrics,.scale-strip{grid-template-columns:repeat(2,1fr)}
   .rollup{grid-template-columns:1fr}
+  .scale-strip{gap:22px}
+  .systems li{grid-template-columns:1fr;gap:8px}
 }
 @media (max-width:520px){
   .brand-word{font-size:15px}

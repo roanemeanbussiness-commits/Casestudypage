@@ -4,16 +4,16 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Client Results | Aethon Talent Intelligence</title>
-<meta name="description" content="What we built for our clients, and what it saved them. Three systems, three businesses, real numbers." />
+<meta name="description" content="What we built for our clients, and what it saved them. Real systems, real numbers, pulled from production." />
 <meta property="og:title" content="Client Results | Aethon Talent Intelligence" />
-<meta property="og:description" content="What we built for our clients, and what it saved them. Three systems, three businesses, real numbers." />
+<meta property="og:description" content="What we built for our clients, and what it saved them. Real systems, real numbers, pulled from production." />
 <meta property="og:type" content="website" />
 <meta name="theme-color" content="#ffffff" />
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Inter:wght@400;450;500;600&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="css/onepager.css?v=1" />
+<link rel="stylesheet" href="css/onepager.css?v=2" />
 </head>
 <body>
 
@@ -32,18 +32,72 @@
   <section class="hero">
     <span class="eyebrow">Client results</span>
     <h1>What we built. What it <em>saved them</em>.</h1>
-    <p class="sub">Aethon builds AI systems that own a function of your business end to end &mdash; hiring, lead flow, scheduling, follow-up. Deployed on your infrastructure, owned by you outright. Here are three of them, with the numbers.</p>
+    <p class="sub">Aethon builds AI systems that own a function of your business end to end &mdash; payments, lead flow, fraud, scheduling, follow-up. Deployed on your infrastructure, owned by you outright. Here is what that has looked like in practice.</p>
     <div class="rollup">
-      <div class="rollup-item"><b class="ph">$000,000</b><span>Saved across clients, annually</span></div>
+      <div class="rollup-item"><b>$576K</b><span>Monthly payouts running through systems we built</span></div>
       <div class="rollup-item"><b class="ph">000 hrs</b><span>Manual work removed per month</span></div>
-      <div class="rollup-item"><b>3</b><span>Systems live in production</span></div>
+      <div class="rollup-item"><b>3</b><span>Businesses running on our systems</span></div>
     </div>
   </section>
 
-  <!-- ===== CASE 1 ===== -->
+  <!-- ============================================================
+       CASE 01 — LEAD SMART
+       Figures sourced from the LeadSmart case study document.
+       Everything in this section is marked VERIFIED in that doc
+       except the time saving, which is tagged .est on the page.
+       ============================================================ -->
   <section class="case">
     <div class="case-head">
       <span class="tag">Case 01</span>
+      <h2>Lead Smart</h2>
+      <p class="case-industry">Pay-per-call performance marketing &mdash; home services</p>
+    </div>
+
+    <div class="scale-strip">
+      <div><b>~3,000</b><span>Inbound calls a day</span></div>
+      <div><b>1,124</b><span>Affiliates paid</span></div>
+      <div><b>11</b><span>Currencies</span></div>
+      <div><b>6 weeks</b><span>Design to deployed</span></div>
+    </div>
+
+    <div class="case-grid">
+      <div class="block">
+        <h3>The problem</h3>
+        <p>Lead Smart connects around 3,000 inbound home-services calls a day to the contractors who buy them, and pays out to more than 1,100 affiliates across four continents. All of it ran by hand. Earnings had to be pulled from two separate platforms, reconciled in a spreadsheet name by name, then paid out one affiliate at a time. And every one of those 3,000 daily calls went unscreened &mdash; there was no fraud detection of any kind.</p>
+      </div>
+      <div class="block">
+        <h3>What we built</h3>
+        <p>Five production systems in roughly six weeks. The centre of it is one dashboard that merges earnings from both platforms and pays every affiliate in a single click, over domestic ACH and international transfer alike. Around it: a fraud engine that scores every connected call, automated dispute handling, weekly buyer reconciliation, and an internal AI assistant with live read access to all three departments.</p>
+      </div>
+      <div class="block">
+        <h3>The outcome</h3>
+        <p>Payment day went from multiple full days of manual reconciliation to a review and one click. Calls that used to be logged at $0 now have their true value written back automatically &mdash; $31,040.20 recovered in a single verified run. And 76,935 calls have been screened for fraud, in a business that had no screening at all six weeks earlier.</p>
+      </div>
+    </div>
+
+    <h4 class="sys-title">The five systems</h4>
+    <ol class="systems">
+      <li><b>Payment platform</b><span>Merges affiliate earnings from two platforms into one record, then pays out via ACH and multi-currency international transfer. Handles monthly and weekly cycles, tracks unpaid balances across all history, and emails every affiliate a confirmation.</span></li>
+      <li><b>Fraud detection</b><span>Screens every connected call on five independent signals &mdash; spoofed and VOIP numbers, shared caller IDs, cross-vertical repeats, coordinated bursts, and geographic clustering. Flagged recordings are transcribed and checked for synthetic voices and repeated scripts.</span></li>
+      <li><b>Buyer reconciliation</b><span>Takes the weekly spreadsheets buyers send back, matches every row to the right call by number and timestamp, previews each change, and writes the real payout amounts back on confirmation.</span></li>
+      <li><b>Dispute automation</b><span>Watches the call-dispute queue around the clock, voids disputed conversions, and closes the task &mdash; with a full audit trail and no one touching it.</span></li>
+      <li><b>Jarvis</b><span>An internal AI assistant with voice, memory, and live read access to payments, fraud, and disputes. Answers questions from current data instead of last week&rsquo;s spreadsheet.</span></li>
+    </ol>
+
+    <div class="metrics">
+      <div class="metric"><b>$576,270</b><span>Paid out monthly through the platform</span></div>
+      <div class="metric"><b>76,935</b><span>Calls screened for fraud</span></div>
+      <div class="metric"><b>$31,040</b><span>Recovered in one reconciliation run</span></div>
+      <div class="metric saved"><b>5 systems</b><span>Shipped in six weeks</span></div>
+    </div>
+
+    <p class="case-note"><b>Time returned:</b> an estimated <span class="est">55&ndash;85 hours</span> of manual work removed every month, across payment runs and weekly reconciliation. <span class="ph">Annual figure pending confirmation from the client.</span></p>
+  </section>
+
+  <!-- ===== CASE 02 ===== -->
+  <section class="case">
+    <div class="case-head">
+      <span class="tag">Case 02</span>
       <h2>Arthur&rsquo;s Arlo</h2>
       <p class="case-industry ph">Industry &mdash; to confirm</p>
     </div>
@@ -69,36 +123,7 @@
     </div>
   </section>
 
-  <!-- ===== CASE 2 ===== -->
-  <section class="case">
-    <div class="case-head">
-      <span class="tag">Case 02</span>
-      <h2>Lead Smart</h2>
-      <p class="case-industry ph">Industry &mdash; to confirm</p>
-    </div>
-    <div class="case-grid">
-      <div class="block">
-        <h3>The problem</h3>
-        <p class="ph">What was broken before we arrived &mdash; the manual process, who was doing it, and what it was costing them every week.</p>
-      </div>
-      <div class="block">
-        <h3>What we built</h3>
-        <p class="ph">The system we deployed, in one or two plain sentences. No jargon &mdash; someone outside the industry should understand it.</p>
-      </div>
-      <div class="block">
-        <h3>The outcome</h3>
-        <p class="ph">What changed for the business after it went live, stated as a result rather than a feature.</p>
-      </div>
-    </div>
-    <div class="metrics">
-      <div class="metric"><b class="ph">00%</b><span>Metric one</span></div>
-      <div class="metric"><b class="ph">00 hrs</b><span>Metric two</span></div>
-      <div class="metric"><b class="ph">00x</b><span>Metric three</span></div>
-      <div class="metric saved"><b class="ph">$00,000</b><span>Saved per year</span></div>
-    </div>
-  </section>
-
-  <!-- ===== CASE 3 ===== -->
+  <!-- ===== CASE 03 ===== -->
   <section class="case">
     <div class="case-head">
       <span class="tag">Case 03</span>
