@@ -116,6 +116,7 @@ em{font-style:normal;color:var(--saffron)}
 .systems b::before{content:"0" counter(sys);display:block;font-family:var(--sans);
   font-size:10.5px;font-weight:600;letter-spacing:.2em;color:var(--saffron);margin-bottom:7px}
 .systems span{font-size:14.5px;color:var(--ink-2);line-height:1.7}
+.systems span i{font-style:normal;font-weight:600;color:var(--ink)}
 
 /* estimate marker — anything not pulled straight from production */
 .est{border-bottom:1px dashed var(--saffron);padding-bottom:1px}
