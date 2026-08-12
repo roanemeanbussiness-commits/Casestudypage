@@ -158,6 +158,8 @@ em{font-style:normal;color:var(--saffron)}
 .foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
   padding:26px var(--gut);border-top:1px solid var(--line-soft);
   font-size:12.5px;color:var(--faint)}
+.foot a{transition:color .25s}
+.foot a:hover{color:var(--saffron)}
 
 /* ===== mobile ===== */
 @media (max-width:860px){
