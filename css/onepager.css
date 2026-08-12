@@ -88,6 +88,7 @@ em{font-style:normal;color:var(--saffron)}
 .tag{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.22em;
   text-transform:uppercase;color:var(--saffron);background:var(--saffron-soft);
   padding:5px 12px;border-radius:999px}
+.tag-live{margin-left:7px;color:#4a7f43;background:#eef6ec}
 .case-head h2{font-size:clamp(30px,4.4vw,44px);margin-top:16px}
 .case-industry{margin-top:10px;font-size:13.5px;color:var(--faint);
   letter-spacing:.02em;display:inline-block}
