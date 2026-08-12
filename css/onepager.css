@@ -1,5 +1,5 @@
 /* ============================================================
-   Aethon Talent Intelligence — client results one-pager
+   Aethon Intelligence — client results one-pager
    White page, saffron #ffa41c accent.
    Fraunces (serif headings) + Inter (sans body), matching
    the design system on aethonintelligence.com.
@@ -84,7 +84,25 @@ em{font-style:normal;color:var(--saffron)}
 /* ===== case studies ===== */
 .case{max-width:var(--wrap);margin:0 auto;padding:var(--sec-pad) var(--gut);
   border-top:1px solid var(--line-soft)}
-.case-head{margin-bottom:38px}
+.case-head{margin-bottom:38px;display:flex;align-items:flex-start;
+  justify-content:space-between;gap:clamp(20px,4vw,48px)}
+.case-head-text{min-width:0}
+
+/* client logo — boxed so three very different marks sit at one optical
+   weight, and desaturated at rest so none of them fights the saffron */
+.client-logo{flex:none;display:flex;align-items:center;justify-content:center;
+  height:76px;padding:11px 16px;border:1px solid var(--line);border-radius:12px;
+  background:#fff;transition:border-color .3s var(--ease),transform .3s var(--ease)}
+.client-logo img{max-height:100%;width:auto;max-width:205px;object-fit:contain;
+  filter:saturate(.85);transition:filter .3s}
+.client-logo:hover{border-color:var(--saffron);transform:translateY(-2px)}
+.client-logo:hover img{filter:saturate(1)}
+
+.client-site{display:block;width:fit-content;margin-top:11px;font-size:13px;font-weight:500;
+  color:var(--saffron);letter-spacing:.01em;
+  border-bottom:1px solid transparent;transition:border-color .25s}
+.client-site::after{content:" \2197"}
+.client-site:hover{border-bottom-color:var(--saffron)}
 .tag{display:inline-block;font-size:10.5px;font-weight:600;letter-spacing:.22em;
   text-transform:uppercase;color:var(--saffron);background:var(--saffron-soft);
   padding:5px 12px;border-radius:999px}
@@ -168,6 +186,11 @@ em{font-style:normal;color:var(--saffron)}
   .rollup{grid-template-columns:1fr}
   .scale-strip{gap:22px}
   .systems li{grid-template-columns:1fr;gap:8px}
+}
+@media (max-width:640px){
+  .case-head{flex-direction:column-reverse;align-items:flex-start;gap:22px}
+  .client-logo{height:62px;padding:10px 15px}
+  .client-logo img{max-width:140px}
 }
 @media (max-width:520px){
   .brand-word{font-size:15px}
