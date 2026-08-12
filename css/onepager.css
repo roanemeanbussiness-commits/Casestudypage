@@ -198,10 +198,23 @@ em{font-style:normal;color:var(--saffron)}
   .cta{border-radius:16px}
 }
 
+/* ===== scroll reveal =====
+   Scoped to .js, which reveal.js only sets when it is going to run, so the
+   page is never left with hidden content if the script does not load. */
+.js .reveal{opacity:0;transform:translateY(18px);
+  transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.js .reveal.in{opacity:1;transform:none}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .reveal{opacity:1;transform:none;transition:none}
+}
+
 /* ===== print / save-as-PDF ===== */
 @media print{
   .topbar,.cta .btn{display:none}
   body{font-size:12px}
   .case{page-break-inside:avoid;border-top:1px solid #ddd}
   .ph{background:none;box-shadow:none}
+  .js .reveal{opacity:1;transform:none}
 }
