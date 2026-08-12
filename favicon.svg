@@ -1,0 +1,20 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#e8871e"/><stop offset="1" stop-color="#a8410f"/></linearGradient>
+    <radialGradient id="c" cx="50%" cy="38%" r="70%"><stop offset="0" stop-color="#e0742a"/><stop offset="1" stop-color="#b8461a"/></radialGradient>
+  </defs>
+  <rect width="200" height="200" rx="44" fill="#ffffff"/>
+  <g transform="translate(0 4)">
+    <g fill="url(#r)" stroke="#241203" stroke-width="1.4" stroke-linejoin="round">
+      <polygon points="94,58 100,20 106,58"/><polygon points="120,66 146,40 126,72"/>
+      <polygon points="140,86 178,80 140,94"/><polygon points="126,128 146,160 120,134"/>
+      <polygon points="106,142 100,180 94,142"/><polygon points="80,134 54,160 74,128"/>
+      <polygon points="60,94 22,80 60,86"/><polygon points="74,72 54,40 80,66"/>
+    </g>
+    <circle cx="100" cy="100" r="42" fill="url(#c)" stroke="#241203" stroke-width="2.5"/>
+    <g fill="#161210" stroke="#f6e9d6" stroke-width="3">
+      <circle cx="100" cy="82" r="18"/><circle cx="100" cy="118" r="18"/>
+      <circle cx="82" cy="100" r="18"/><circle cx="118" cy="100" r="18"/>
+    </g>
+  </g>
+</svg>
