@@ -18,5 +18,6 @@ It needs Pillow and a headless Chromium to screenshot the HTML it writes:
 python3 assets/brand/banner.py     # writes banner-light.html / banner-dark.html
 ```
 
-Then screenshot each at 1584x396. Editing the tagline, colours, or spacing
+Then screenshot each at 1584x396 with a deviceScaleFactor of 3 and downsample;
+that is where the crispness comes from. Editing the tagline, colours, or spacing
 means editing the template in that script, not the PNGs.
